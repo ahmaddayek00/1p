@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DailyMotivationApp</string>
+    <string name="title_activity_favorites">favoritesActivity</string>
+    <string name="quote_will_appear_here">Quote will appear here</string>
+    <string name="save">Save</string>
+    <string name="view_favorites">View Favorites</string>
+</resources>

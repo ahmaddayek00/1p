@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="favoritesListView" type="id" />
+    <item name="quoteTextView" type="id" />
+    <item name="saveButton" type="id" />
+    <item name="viewFavoritesButton" type="id" />
+</resources>

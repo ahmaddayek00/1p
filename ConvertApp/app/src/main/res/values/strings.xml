@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ConvertApp</string>
+    <string name="decimal_result">Decimal Result:</string>
+    <string name="convert">Convert</string>
+    <string name="enter_binary_number">Enter Binary Number</string>
+    <string name="binary_to_decimal_converter">Binary to Decimal Converter</string>
+</resources>
