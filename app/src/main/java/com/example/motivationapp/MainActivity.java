@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Navigate to FavoritesActivity
         viewFavoritesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("Favorites", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        // Retrieve existing favorites
+
         String favorites = sharedPreferences.getString("quotes", "");
         if (!favorites.contains(quote)) {
             favorites += quote + ";";

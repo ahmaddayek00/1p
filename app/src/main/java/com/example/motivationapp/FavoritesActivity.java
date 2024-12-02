@@ -21,7 +21,7 @@ public class FavoritesActivity extends AppCompatActivity {
 
         favoritesListView = findViewById(R.id.favoritesListView);
 
-        // Load favorite quotes
+
         loadFavoriteQuotes();
     }
 

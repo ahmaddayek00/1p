@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- TextView to display the motivational quote -->
+
     <TextView
         android:id="@+id/quoteTextView"
         android:layout_width="match_parent"
@@ -14,14 +14,14 @@
         android:gravity="center"
         android:padding="16dp" />
 
-    <!-- Button to save the quote -->
+
     <Button
         android:id="@+id/saveButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Save to Favorites" />
 
-    <!-- Button to view saved favorite quotes -->
+
     <Button
         android:id="@+id/viewFavoritesButton"
         android:layout_width="match_parent"
