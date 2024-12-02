@@ -4,25 +4,28 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- TextView to display the motivational quote -->
     <TextView
         android:id="@+id/quoteTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/quote_will_appear_here"
+        android:text="Quote will appear here"
         android:textSize="18sp"
         android:gravity="center"
         android:padding="16dp" />
 
-
+    <!-- Button to save the quote -->
     <Button
         android:id="@+id/saveButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/save" />
+        android:text="Save to Favorites" />
+
+    <!-- Button to view saved favorite quotes -->
     <Button
         android:id="@+id/viewFavoritesButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/view_favorites"
-        android:layout_marginTop="15dp" />
+        android:text="View Favorites"
+        android:layout_marginTop="8dp" />
 </LinearLayout>

@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- ListView to display favorite quotes -->
     <ListView
         android:id="@+id/favoritesListView"
         android:layout_width="match_parent"

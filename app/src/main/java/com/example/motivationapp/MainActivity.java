@@ -3,6 +3,7 @@ package com.example.motivationapp;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,10 +17,11 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     private TextView quoteTextView;
+    private Button saveButton, viewFavoritesButton;
     private String currentQuote;
 
     // List of motivational quotes
-    private final ArrayList<String> quotes = new ArrayList<>(Arrays.asList(
+    private ArrayList<String> quotes = new ArrayList<>(Arrays.asList(
             "Believe in yourself and all that you are.",
             "The only way to do great work is to love what you do.",
             "Success is not the key to happiness. Happiness is the key to success.",
@@ -36,19 +38,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         quoteTextView = findViewById(R.id.quoteTextView);
-        Button saveButton = findViewById(R.id.saveButton);
-        Button viewFavoritesButton = findViewById(R.id.viewFavoritesButton);
+        saveButton = findViewById(R.id.saveButton);
+        viewFavoritesButton = findViewById(R.id.viewFavoritesButton);
 
         // Display a random quote
         displayRandomQuote();
 
         // Save the current quote to favorites
-        saveButton.setOnClickListener(v -> saveQuoteToFavorites(currentQuote));
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                saveQuoteToFavorites(currentQuote);
+            }
+        });
 
         // Navigate to FavoritesActivity
-        viewFavoritesButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, FavoritesActivity.class);
-            startActivity(intent);
+        viewFavoritesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FavoritesActivity.class);
+                startActivity(intent);
+            }
         });
     }
 
